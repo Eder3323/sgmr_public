@@ -6,10 +6,13 @@ use Livewire\Component;
 
 class Principal extends Component
 {
+
     public function render()
     {
+        $title = session('page_title','Reglamentos y Espectaculos');
+
         return view('livewire.reglamentos.reglamentos-espectaculos.principal')
             ->extends('layouts.app')
-            ->section('content')->with(['title'=>'Reglamentos y Espectaculos']);
+            ->section('content')->with(['title' => $title]);
     }
 }

@@ -34,12 +34,15 @@ class Dashboard extends Component
             $this->history[] = ['title' => $title, 'url' => $url];
             Session::put('navigation_history', $this->history);
         }
+        session()->flash('page_title', $title);
         return redirect()->route($url);
     }
     public function render()
     {
+        $title = session('page_title','Dashboard');
+
         return view('livewire.menu.dashboard')
             ->extends('layouts.app')
-            ->section('content')->with(['title'=>'Dashboard']);
+            ->section('content')->with(['title'=> $title]);
     }
 }

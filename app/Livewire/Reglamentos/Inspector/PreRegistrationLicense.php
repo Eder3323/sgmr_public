@@ -58,8 +58,10 @@ class PreRegistrationLicense extends Component
 
     public function render()
     {
+        $title = session('page_title','Pre Registro Licencia');
+
         return view('livewire.reglamentos.inspector.pre-registration-license')
             ->extends('layouts.app')
-            ->section('content')->with(['title'=>'Pre Registro Licencia']);
+            ->section('content')->with(['title' => $title]);
     }
 }
