@@ -3,5 +3,5 @@
         {{ __($title) }}
     @endsection
 
-    {{'jhoa mundo'}}
+        <livewire:reglamentos.inspector.table-historial />
 </div>
