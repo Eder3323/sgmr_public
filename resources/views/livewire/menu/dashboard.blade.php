@@ -52,6 +52,7 @@
                                 <x-menu.submenu-card title="Inspector">
                                     <x-menu.submenu_child :title="'Pre Registro Inspector'" :route="'reglamentos.inspector.registro'"></x-menu.submenu_child>
                                     <x-menu.submenu_child :title="'Historial de Registro'" :route="'reglamentos.inspector.historial'"></x-menu.submenu_child>
+                                    <x-menu.submenu_child :title="'Mapas'" :route="'reglamentos.inspector.maps'"></x-menu.submenu_child>
                                 </x-menu.submenu-card>
                             </x-slot>
                         </x-menu.card>

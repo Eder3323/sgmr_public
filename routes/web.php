@@ -8,6 +8,8 @@ use App\Livewire\Menu\Dashboard as Dashboard;
 use App\Livewire\Reglamentos\ReglamentosEspectaculos\Principal as ReglamentosPrincipal;
 use App\Livewire\Reglamentos\Inspector\PreRegistrationLicense as PreRegistrationLicense;
 use App\Livewire\Reglamentos\Inspector\Historial as ReglamentosInspectorHistorial;
+use App\Livewire\Reglamentos\Inspector\Maps as ReglamentosInspectorMaps;
+
 
 // ---------------/DASHBOARD --------------------
 Route::get('/', function () {return redirect()->route('login');});
@@ -23,6 +25,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // --------------/REGLAMENTOS -> INSPECTOR ------
     Route::get('/reglamentos/inspector', PreRegistrationLicense::class)->name('reglamentos.inspector.registro');
     Route::get('/reglamentos/historial', ReglamentosInspectorHistorial::class)->name('reglamentos.inspector.historial');
+    Route::get('/reglamentos/maps', ReglamentosInspectorMaps::class)->name('reglamentos.inspector.maps');
+
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

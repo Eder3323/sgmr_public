@@ -8,6 +8,7 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
+        "larswiegers/laravel-maps": "^0.18.0",
         "livewire/livewire": "^3.5",
         "livewire/volt": "^1.6",
         "rappasoft/laravel-livewire-tables": "^3.4"

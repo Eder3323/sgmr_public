@@ -12,7 +12,10 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="#">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClTcY2eGMCG7zZTLeckwnTLZLyBpNiZeY"></script>
+{{--        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>--}}
 
+        {{--        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />--}}
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles

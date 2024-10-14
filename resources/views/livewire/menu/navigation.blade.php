@@ -76,7 +76,7 @@ new class extends Component {
                     <x-dropdown align="right" width="48" >
                         <x-slot name="trigger">
                             <button class="inline-flex items-center p-2 text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
-                                <div>{{ Auth::user()->name }}</div>
+                                <div>{{ Auth::user()->name ??'User'}}</div>
 
                                 <div class="ms-1">
                                     <x-icons.arrow_down  class="fill-current h-4 w-4"></x-icons.arrow_down>
@@ -126,8 +126,8 @@ new class extends Component {
             <!-- Responsive Settings Options -->
             <div class="pt-4 pb-1 border-t border-gray-200">
                 <div class="px-4">
-                    <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                    <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                    <div class="font-medium text-base text-gray-800">{{ Auth::user()->name ?? 'No name'}}</div>
+                    <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email ?? 'No email'}}</div>
                 </div>
 
                 <div class="mt-3 space-y-1">
