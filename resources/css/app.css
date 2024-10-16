@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.inset-l-full {
+    left: 100%;
+}
+
+#map {
+    height: 500px; /* Ajuste esto según sus necesidades */
+    width: 100%; /* O un ancho específico */
+}
+
+#getLocation {
+    z-index: 1000; /* Asegúrese de que esté por encima del mapa */
+}
