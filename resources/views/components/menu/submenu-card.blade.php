@@ -17,7 +17,7 @@
             <span class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -ml-1 mt-2"></span>
             <div class="bg-white rounded w-full relative z-10 py-1">
                 <ul class="list-reset">
-                    {{ $slot }} {{-- Aquí se insertan las opciones de submenu --}}
+                    {{ $slot }}
                 </ul>
             </div>
         </div>

@@ -5,7 +5,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg py-28">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg sm:py-4 lg:py-40">
                 <div class="p-6 text-gray-900">
 
                     <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -29,7 +29,7 @@
                                     <x-menu.submenu_child :title="'Pagos'" :route="'predial.pagos'"></x-menu.submenu_child>
                                     <x-menu.submenu_child :title="'Cancelaciones'" :route="'predial.cancelaciones'"></x-menu.submenu_child>
                                 </x-menu.submenu-card>
-                                <x-menu.submenu-card title="Configuraciones" :route="'chatgpt'">
+                                <x-menu.submenu-card title="Configuraciones" :route="'prueba'">
                                 </x-menu.submenu-card>
                             </x-slot>
                         </x-menu.card>
